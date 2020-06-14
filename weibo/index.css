@@ -16,29 +16,40 @@ body {
 #head {
     box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.3), 0 0 6px 2px rgba(0, 0, 0, 0.15);
     background: rgba(255, 255, 255, 0.94);
-    /* width: 1280px; */
     height: 48px;
+    width: 100%;
+    margin: 0 auto;
 }
 
-#head .headleft a {
+#head  .logo{
     margin-left: 50px;
-    width: 190px;
+    display: inline-block;
+    width: 100px;
     height: 48px;
-    text-align: left;
-    vertical-align: middle;
-    /* top: -24px; */
-}
-
-#head .headleft a span {
-    text-align: center;
-    vertical-align: middle;
-    background-color: red;
+text-align: center;
+vertical-align: middle;
     background: url(./img/WB_logo.png) no-repeat 0 40%;
 }
 
+
 #head li {
-    float: left;
+    
+   
+    line-height: 48px;
+float: left;
+    margin-left: 15px;
 }
+#head li a{
+    margin-right: 10px;
+}
+
+
+#head li span ,#head li a{
+    font-size: 14px;
+    height: 26px;
+    color: #333;
+}
+
 
 #head .headright {
     float: right;
