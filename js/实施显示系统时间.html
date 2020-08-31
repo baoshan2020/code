@@ -6,8 +6,8 @@
     <title>实施显示系统时间</title>
 </head>
 <body >
-   <div id="result"></div>
-   
+   <!-- <div id="result"></div>
+    -->
 <script> 
 function getDateTime(){
     var now = new Date();
@@ -20,16 +20,14 @@ function getDateTime(){
     if (hour < 10 ) {hour = "0" + hour}
     var minute = now.getMinutes()
     if (minute < 10 ) {minute  = "0" + minute}
-
     var second = now.getSeconds();
     if (second < 10 ){ second = "0" + second ;}
 var str = "北京时间： ";
 str +=year+"年"+month+"月"+date+"日"+" "+hour+":"+minute+":"+second;
 document.getElementById("result").innerHTML=str;
 window.setTimeout("getDateTime()",1000);
-
 }
-getDateTime();
+windows.load = getDateTime;
 </script>
 
 
